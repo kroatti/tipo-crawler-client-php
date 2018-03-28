@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  TipoCrawler\Api
+ * @package  TipoCrawler
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace TipoCrawler\Api\Model;
+namespace TipoCrawler\Model;
 
 use \ArrayAccess;
-use \TipoCrawler\Api\ObjectSerializer;
+use \TipoCrawler\ObjectSerializer;
 
 /**
  * TipoSearchResult Class Doc Comment
  *
  * @category Class
- * @package  TipoCrawler\Api
+ * @package  TipoCrawler
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TipoSearchResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'success' => 'bool',
         'error_message' => 'string',
-        'result_list' => '\TipoCrawler\Api\Model\ResultItem[]',
+        'result_list' => '\TipoCrawler\Model\ResultItem[]',
         'result_count' => 'int'
     ];
 
@@ -274,7 +274,7 @@ class TipoSearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets result_list
      *
-     * @return \TipoCrawler\Api\Model\ResultItem[]
+     * @return \TipoCrawler\Model\ResultItem[]
      */
     public function getResultList()
     {
@@ -284,7 +284,7 @@ class TipoSearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets result_list
      *
-     * @param \TipoCrawler\Api\Model\ResultItem[] $result_list result_list
+     * @param \TipoCrawler\Model\ResultItem[] $result_list result_list
      *
      * @return $this
      */

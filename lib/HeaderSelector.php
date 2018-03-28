@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  TipoCrawler\Api
+ * @package  TipoCrawler
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace TipoCrawler\Api;
+namespace TipoCrawler;
 
 use \Exception;
 
@@ -34,7 +34,7 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  TipoCrawler\Api
+ * @package  TipoCrawler
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

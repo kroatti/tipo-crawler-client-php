@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  TipoCrawler\Api\Model
+ * @package  TipoCrawler\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace TipoCrawler\Api\Model;
+namespace TipoCrawler\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package TipoCrawler\Api\Model
+ * @package TipoCrawler\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

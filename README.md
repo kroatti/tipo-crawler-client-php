@@ -56,12 +56,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new TipoCrawler\Api\Api\SearchApi(
+$apiInstance = new TipoCrawler\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$model = new \TipoCrawler\Api\Model\DownloadViewModel(); // \TipoCrawler\Api\Model\DownloadViewModel | 
+$model = new \TipoCrawler\Model\DownloadViewModel(); // \TipoCrawler\Model\DownloadViewModel | 
 
 try {
     $result = $apiInstance->apiSearchDetailsPost($model);

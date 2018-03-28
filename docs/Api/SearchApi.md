@@ -1,4 +1,4 @@
-# TipoCrawler\Api\SearchApi
+# TipoCrawler\SearchApi
 
 All URIs are relative to *https://localhost*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **apiSearchDetailsPost**
-> \TipoCrawler\Api\Model\TipoDetailsResult apiSearchDetailsPost($model)
+> \TipoCrawler\Model\TipoDetailsResult apiSearchDetailsPost($model)
 
 
 
@@ -19,12 +19,12 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new TipoCrawler\Api\Api\SearchApi(
+$apiInstance = new TipoCrawler\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$model = new \TipoCrawler\Api\Model\DownloadViewModel(); // \TipoCrawler\Api\Model\DownloadViewModel | 
+$model = new \TipoCrawler\Model\DownloadViewModel(); // \TipoCrawler\Model\DownloadViewModel | 
 
 try {
     $result = $apiInstance->apiSearchDetailsPost($model);
@@ -39,11 +39,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | [**\TipoCrawler\Api\Model\DownloadViewModel**](../Model/DownloadViewModel.md)|  | [optional]
+ **model** | [**\TipoCrawler\Model\DownloadViewModel**](../Model/DownloadViewModel.md)|  | [optional]
 
 ### Return type
 
-[**\TipoCrawler\Api\Model\TipoDetailsResult**](../Model/TipoDetailsResult.md)
+[**\TipoCrawler\Model\TipoDetailsResult**](../Model/TipoDetailsResult.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new TipoCrawler\Api\Api\SearchApi(
+$apiInstance = new TipoCrawler\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -99,7 +99,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **apiSearchPost**
-> \TipoCrawler\Api\Model\TipoSearchResult apiSearchPost($model)
+> \TipoCrawler\Model\TipoSearchResult apiSearchPost($model)
 
 
 
@@ -108,12 +108,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new TipoCrawler\Api\Api\SearchApi(
+$apiInstance = new TipoCrawler\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$model = new \TipoCrawler\Api\Model\FilterViewModel(); // \TipoCrawler\Api\Model\FilterViewModel | 
+$model = new \TipoCrawler\Model\FilterViewModel(); // \TipoCrawler\Model\FilterViewModel | 
 
 try {
     $result = $apiInstance->apiSearchPost($model);
@@ -128,11 +128,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | [**\TipoCrawler\Api\Model\FilterViewModel**](../Model/FilterViewModel.md)|  | [optional]
+ **model** | [**\TipoCrawler\Model\FilterViewModel**](../Model/FilterViewModel.md)|  | [optional]
 
 ### Return type
 
-[**\TipoCrawler\Api\Model\TipoSearchResult**](../Model/TipoSearchResult.md)
+[**\TipoCrawler\Model\TipoSearchResult**](../Model/TipoSearchResult.md)
 
 ### Authorization
 

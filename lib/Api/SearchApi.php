@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  TipoCrawler\Api
+ * @package  TipoCrawler
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace TipoCrawler\Api\Api;
+namespace TipoCrawler\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use TipoCrawler\Api\ApiException;
-use TipoCrawler\Api\Configuration;
-use TipoCrawler\Api\HeaderSelector;
-use TipoCrawler\Api\ObjectSerializer;
+use TipoCrawler\ApiException;
+use TipoCrawler\Configuration;
+use TipoCrawler\HeaderSelector;
+use TipoCrawler\ObjectSerializer;
 
 /**
  * SearchApi Class Doc Comment
  *
  * @category Class
- * @package  TipoCrawler\Api
+ * @package  TipoCrawler
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,11 +90,11 @@ class SearchApi
     /**
      * Operation apiSearchDetailsPost
      *
-     * @param  \TipoCrawler\Api\Model\DownloadViewModel $model model (optional)
+     * @param  \TipoCrawler\Model\DownloadViewModel $model model (optional)
      *
-     * @throws \TipoCrawler\Api\ApiException on non-2xx response
+     * @throws \TipoCrawler\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TipoCrawler\Api\Model\TipoDetailsResult
+     * @return \TipoCrawler\Model\TipoDetailsResult
      */
     public function apiSearchDetailsPost($model = null)
     {
@@ -105,15 +105,15 @@ class SearchApi
     /**
      * Operation apiSearchDetailsPostWithHttpInfo
      *
-     * @param  \TipoCrawler\Api\Model\DownloadViewModel $model (optional)
+     * @param  \TipoCrawler\Model\DownloadViewModel $model (optional)
      *
-     * @throws \TipoCrawler\Api\ApiException on non-2xx response
+     * @throws \TipoCrawler\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TipoCrawler\Api\Model\TipoDetailsResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TipoCrawler\Model\TipoDetailsResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiSearchDetailsPostWithHttpInfo($model = null)
     {
-        $returnType = '\TipoCrawler\Api\Model\TipoDetailsResult';
+        $returnType = '\TipoCrawler\Model\TipoDetailsResult';
         $request = $this->apiSearchDetailsPostRequest($model);
 
         try {
@@ -165,7 +165,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TipoCrawler\Api\Model\TipoDetailsResult',
+                        '\TipoCrawler\Model\TipoDetailsResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class SearchApi
      *
      * 
      *
-     * @param  \TipoCrawler\Api\Model\DownloadViewModel $model (optional)
+     * @param  \TipoCrawler\Model\DownloadViewModel $model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -208,14 +208,14 @@ class SearchApi
      *
      * 
      *
-     * @param  \TipoCrawler\Api\Model\DownloadViewModel $model (optional)
+     * @param  \TipoCrawler\Model\DownloadViewModel $model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function apiSearchDetailsPostAsyncWithHttpInfo($model = null)
     {
-        $returnType = '\TipoCrawler\Api\Model\TipoDetailsResult';
+        $returnType = '\TipoCrawler\Model\TipoDetailsResult';
         $request = $this->apiSearchDetailsPostRequest($model);
 
         return $this->client
@@ -258,7 +258,7 @@ class SearchApi
     /**
      * Create request for operation 'apiSearchDetailsPost'
      *
-     * @param  \TipoCrawler\Api\Model\DownloadViewModel $model (optional)
+     * @param  \TipoCrawler\Model\DownloadViewModel $model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -346,7 +346,7 @@ class SearchApi
      * Operation apiSearchError500Post
      *
      *
-     * @throws \TipoCrawler\Api\ApiException on non-2xx response
+     * @throws \TipoCrawler\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -359,7 +359,7 @@ class SearchApi
      * Operation apiSearchError500PostWithHttpInfo
      *
      *
-     * @throws \TipoCrawler\Api\ApiException on non-2xx response
+     * @throws \TipoCrawler\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -403,7 +403,7 @@ class SearchApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TipoCrawler\Api\Model\Error500Obj',
+                        '\TipoCrawler\Model\Error500Obj',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -555,11 +555,11 @@ class SearchApi
     /**
      * Operation apiSearchPost
      *
-     * @param  \TipoCrawler\Api\Model\FilterViewModel $model model (optional)
+     * @param  \TipoCrawler\Model\FilterViewModel $model model (optional)
      *
-     * @throws \TipoCrawler\Api\ApiException on non-2xx response
+     * @throws \TipoCrawler\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TipoCrawler\Api\Model\TipoSearchResult
+     * @return \TipoCrawler\Model\TipoSearchResult
      */
     public function apiSearchPost($model = null)
     {
@@ -570,15 +570,15 @@ class SearchApi
     /**
      * Operation apiSearchPostWithHttpInfo
      *
-     * @param  \TipoCrawler\Api\Model\FilterViewModel $model (optional)
+     * @param  \TipoCrawler\Model\FilterViewModel $model (optional)
      *
-     * @throws \TipoCrawler\Api\ApiException on non-2xx response
+     * @throws \TipoCrawler\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TipoCrawler\Api\Model\TipoSearchResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TipoCrawler\Model\TipoSearchResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiSearchPostWithHttpInfo($model = null)
     {
-        $returnType = '\TipoCrawler\Api\Model\TipoSearchResult';
+        $returnType = '\TipoCrawler\Model\TipoSearchResult';
         $request = $this->apiSearchPostRequest($model);
 
         try {
@@ -630,7 +630,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TipoCrawler\Api\Model\TipoSearchResult',
+                        '\TipoCrawler\Model\TipoSearchResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -653,7 +653,7 @@ class SearchApi
      *
      * 
      *
-     * @param  \TipoCrawler\Api\Model\FilterViewModel $model (optional)
+     * @param  \TipoCrawler\Model\FilterViewModel $model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -673,14 +673,14 @@ class SearchApi
      *
      * 
      *
-     * @param  \TipoCrawler\Api\Model\FilterViewModel $model (optional)
+     * @param  \TipoCrawler\Model\FilterViewModel $model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function apiSearchPostAsyncWithHttpInfo($model = null)
     {
-        $returnType = '\TipoCrawler\Api\Model\TipoSearchResult';
+        $returnType = '\TipoCrawler\Model\TipoSearchResult';
         $request = $this->apiSearchPostRequest($model);
 
         return $this->client
@@ -723,7 +723,7 @@ class SearchApi
     /**
      * Create request for operation 'apiSearchPost'
      *
-     * @param  \TipoCrawler\Api\Model\FilterViewModel $model (optional)
+     * @param  \TipoCrawler\Model\FilterViewModel $model (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
